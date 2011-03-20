@@ -1,0 +1,18 @@
+syntax-js
+simple syntax highlighter
+
+Hisataka Ishii <scraper.once@gmail.com>
+MIT License
+-------------------------------------------------------
+
+use:
+syntax.highlight(DOMElement elem, String dictionary, String pallet);
+
+syntax.SyntaxHighlight.DICTINARIES // supported highlights hash.
+syntax.SyntaxHighlight.PALLETS // supported color pallets hash.
+you can edit/add above hash. highlight your language!
+
+-------------------------------------------------------
+
+if available depends:
+var syntax = depends("syntax");

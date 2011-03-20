@@ -1,0 +1,76 @@
+/*
+  base style sheet
+  2009 10,5
+*/
+
+/* element */
+* {
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	font-size: 3.6mm;
+}
+
+a {
+	color: #447800;
+}
+a:visited {
+	color: #559900;
+}
+br {
+	letter-spacing: 0;
+}
+body {
+	font-family: "Trebuchet MS", Arial, sans-serif;
+	color: #0a0a0a;
+	background-color: #eeffaa;
+	letter-spacing: 1px;
+}
+body div {
+	padding: 1em 11em 1em 11em;
+}
+h1, h2, h3 {
+	font-size: 130%;
+	line-height: 1.5;
+	font-weight: normal;
+}
+h1 {
+	font-weight: bold;
+}
+ul {
+	list-style-type: square;
+}
+ul li {
+	padding: 0.2em 0;
+	margin-left: 2em;
+}
+
+/* id# */
+div#content {
+	color: #2a2a2a;
+	background-color: #ffffff;
+}
+div#content h3 {
+	border-bottom: 1px solid #eff3ec;
+}
+div#content h3, h4 {
+	margin-top: 1em;
+	margin-bottom: .3em;
+}
+div#content p, div#content pre {
+	line-height: 1.32;
+	margin-top: 0.5em;
+}
+div#footer {
+	clear: both;
+}
+
+/* class. */
+pre.codes { 
+	display: block;
+	overflow: auto;
+	font-family: monospace;
+	line-height: 1.25;
+	padding: 1em;
+	background-color: #fafff0;
+}

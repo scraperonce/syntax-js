@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+
+<title>syntax-js - document</title>
+
+<link rel="stylesheet" href="style.css" />
+<style>
+pre.codes {
+	height: 200px;
+}
+</style>
+<script src="../src/syntax.js"></script>
+<script>
+<!--
+function main() {
+	var div = document.getElementById("content");
+	var pre = div.getElementsByTagName("pre");
+	for (var i=0; i<pre.length; i++) {
+		pre[i].onclick = function() {
+			syntax.highlight(this);
+			this.onclick = function() {};
+		};
+	};
+}
+window.onload = main;
+//-->
+</script>
+</head>
+
+<body>
+<div id="header">
+<h1>syntax-js</h1>
+<h2>simple syntax highlighter on javascript.</h2>
+</div>
+<div id="content">
+<h3>introduction</h3>
+<p>Web上での構文ハイライトをJavaScriptで実装しました</p>
+<p><a href="http://www.opensource.org/licenses/mit-license.php">MITライセンス</a>を適用しています</p>
+<h4>release1</h4>
+<ul>
+<li><strong>preタグだとちゃんと動作します</strong></li>
+<li>必要に応じて、ハイライト辞書とカラーパレットはユーザ側で用意できます</li>
+</ul>
+<h3>demo</h3>
+<p>ソースコードをclickで、ハイライト実行。</p>
+<h4>JavaScript</h4>
+<pre class="codes">
+var a = [1,2,3,4, new Number(5)];
+a.push("six");
+
+/* "abc".reverse() => "cba"  */
+String.prototype.reverse = function() {
+    for (var s="",i=this.length-1; i>=0; i--) s += this[i];
+    return s;
+};
+alert( new String(1234).reverse() ); // 4321
+new SyntaxHighlight().applyTo(this); // highlight
+</pre>
+</div>
+<div id="footer">
+<p>(C) <a href="mailto:scraper.once@gmail.com">Hisataka Ishii</a>, since May 10 2009, last modified on March 20 2011</p>
+</div>
+</body>
+</html>
